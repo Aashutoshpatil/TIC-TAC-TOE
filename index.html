@@ -4,14 +4,47 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic-tac-toe Game</title>
+
+    <link rel="stylesheet" href="index.css">
+
+    <style>
+        /* Footer styling */
+        footer {
+            position: fixed;
+            bottom: 10px;
+            width: 100%;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            font-size: 14px;
+            color: white;
+        }
+
+        .dev-badge {
+            display: inline-block;
+            padding: 8px 16px;
+            background: linear-gradient(90deg, #667eea, #764ba2);
+            border-radius: 20px;
+            animation: glow 2s infinite alternate;
+        }
+
+        @keyframes glow {
+            from {
+                box-shadow: 0 0 5px #667eea;
+            }
+            to {
+                box-shadow: 0 0 15px #764ba2;
+            }
+        }
+    </style>
 </head>
-<link rel="stylesheet" href="index.css">
+
 <body>
     <main>
-        <h1>Tic Tac Toe game</h1>
+        <h1>Tic Tac Toe Game</h1>
+
         <div class="container"></div>
-         <div class="box">
-            
+
+        <div class="box">
             <button class="game"></button>
             <button class="game"></button>
             <button class="game"></button>
@@ -21,11 +54,28 @@
             <button class="game"></button>
             <button class="game"></button>
             <button class="game"></button>
-            
-        </div>
         </div>
     </main>
-    
-<script src="app.js"></script>
+
+    <!-- Footer -->
+    <footer>
+        <div class="dev-badge" id="devText"></div>
+    </footer>
+
+    <!-- Typing effect -->
+    <script>
+        const text = "Developed by Aashutosh Patil";
+        let i = 0;
+        function typeEffect() {
+            if (i < text.length) {
+                document.getElementById("devText").innerHTML += text.charAt(i);
+                i++;
+                setTimeout(typeEffect, 80);
+            }
+        }
+        typeEffect();
+    </script>
+
+    <script src="app.js"></script>
 </body>
 </html>
