@@ -31,7 +31,7 @@ Click Restart to play again
 🔗 Live Demo
 
 👉 Add your deployed link here
-https://darling-sable-f6d396.netlify.app/
+https://aashutoshpatil.github.io/TIC-TAC-TOE/
 
 📸 Screenshots
 
