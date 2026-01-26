@@ -31,8 +31,7 @@ Click Restart to play again
 🔗 Live Demo
 
 👉 Add your deployed link here
-https://aashutoshpatil.github.io/TIC-TAC-TOE/
-
+https://tic-tac-toe-gamma-sage-83.vercel.app/
 📸 Screenshots
 
 <img width="1334" height="619" alt="image" src="https://github.com/user-attachments/assets/95ca9dce-9b27-4790-a466-4e877c9a4af3" />
